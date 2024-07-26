@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Student Dashboard</h1>
+    <table>
+        <tr>
+             <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            
+        </tr>
+        {% for student in student %}
+            <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.age }}</td>
+                <td>{{ student.grade }}</td>
+                 
+                    
+                </td> 
+            </tr>
+        {% endfor %} 
+    </table>
+    
+</body>
+</html>

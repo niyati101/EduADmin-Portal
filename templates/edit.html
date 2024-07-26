@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Edit Student</h1>
+    <form action="/edit/{{ student.id }}" method="post">
+    	<input type="int" name="id" value="{{ student.id }}" required><br>
+        <input type="varchar" name="name" value="{{ student.name }}" required><br>
+        <input type="int" name="age" value="{{ student.age }}" required><br>
+        <input type="varchar" name="grade" value="{{ student.grade }}" required><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>

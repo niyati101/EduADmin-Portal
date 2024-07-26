@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Add Student</h1>
+    <form action="/add" method="post">
+    	<input type="int" name="id" placeholder="Id" required><br>
+        <input type="varchar" name="name" placeholder="Name" required><br>
+        <input type="int" name="age" placeholder="Age" required><br>
+        <input type="varchar" name="grade" placeholder="Grade" required><br>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>

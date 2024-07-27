@@ -10,5 +10,8 @@
     <form action="/delete/{{ student.id }}" method="post">
         <input type="submit" value="Delete">
     </form>
+     <form action="{{ url_for('logout') }}" method="post">
+        <button type="submit">Logout</button>
+    </form>
 </body>
 </html>

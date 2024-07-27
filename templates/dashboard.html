@@ -9,10 +9,19 @@
     <a href="/add">Add Student</a>
     <table>
         <tr>
-             <th>Id</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Grade</th>
+             <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>age</th>
+            <th>gender</th>
+            <th>dob</th>
+            <th>year_of_admn</th>
+            <th>address</th>
+            <th>phoneno</th>
+            
+            <th>email</th>
+            
+        </tr>
             
         </tr>
         {% for student in student %}
@@ -20,7 +29,13 @@
                 <td>{{ student.id }}</td>
                 <td>{{ student.name }}</td>
                 <td>{{ student.age }}</td>
-                <td>{{ student.grade }}</td>
+                <td>{{ student.gender }}</td>
+                <td>{{ student.dob }}</td>
+                <td>{{ student.year_of_admn }}</td>
+                <td>{{ student.address }}</td>
+                <td>{{ student.phoneno }}</td>
+                <td>{{ student.email }}</td>
+                
                 <td> 
                     <a href="/edit/{{ student.id }}">Edit</a>
                     <a href="/delete/{{ student.id }}">Delete</a>
@@ -28,5 +43,8 @@
             </tr>
         {% endfor %} 
     </table>
+     <form action="{{ url_for('logout') }}" method="post">
+        <button type="submit">Logout</button>
+    </form>
 </body>
 </html>

@@ -1,21 +1,46 @@
 body {
-    text-align: center;
-    
-    
-
+    background-image: url('https://th.bing.com/th/id/R.4b985f3033a328f7b4a0a4b4b45b68f7?rik=YIv3bJ%2fdCcPTGQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fQJ0trsu.jpg&ehk=cWf%2f4f6A8jJ1IabgBUIjSY55fIhZxce3VjKknTua5Lk%3d&risl=&pid=ImgRaw&r=0'); /* Path to the background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    font-family: Arial, sans-serif; /* Set a default font for the entire page */
+    color: #333; /* Set a default text color */
+    text-align: center; /* Center align text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-
 table {
-    margin: 20px auto;
-    border-collapse: collapse;
+    margin: 20px auto; /* Center table and add margin */
+    border-collapse: collapse; /* Collapse table borders */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to the table */
 }
 
 table, th, td {
-    border: 1px solid black;
-    padding: 5px;
+    border: 1px solid black; /* Add border to table, th, and td */
+    padding: 10px; /* Add padding to table cells */
+}
+
+th {
+    background-color: #f2f2f2; /* Add background color to table header */
 }
 
 a {
-    margin: 10px;
+    margin: 10px; /* Add margin around links */
+    padding: 10px 15px; /* Add padding to links */
+    color: #fff; /* Set link text color */
+    background-color: #007bff; /* Set link background color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Add rounded corners to links */
+    display: inline-block; /* Make links block-level elements */
+}
+
+a:hover {
+    background-color: #0056b3; /* Change link background color on hover */
+}
+
+h1 {
+    margin-top: 50px; /* Add space above the heading */
+    color: #fff; /* Set heading text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text for better visibility */
 }

@@ -3,14 +3,61 @@
 <head>
     <title>Add Student</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        form {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        label {
+            display: inline-block;
+            width: 200px;
+            text-align: left;
+        }
+
+        input[type="text"], input[type="submit"] {
+            width: 250px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>Add Student</h1>
     <form action="/add" method="post">
-    	<input type="int" name="id" placeholder="Id" required><br>
-        <input type="varchar" name="name" placeholder="Name" required><br>
-        <input type="int" name="age" placeholder="Age" required><br>
-        <input type="varchar" name="grade" placeholder="Grade" required><br>
+        <label for="id">ID:</label>
+        <input type="text" name="id" value="{{ student.id }}" required><br>
+        
+        <label for="name">NAME:</label>
+        <input type="text" name="name" value="{{ student.name }}" required><br>
+
+        <label for="age">AGE:</label>
+        <input type="text" name="age" value="{{ student.age }}" required><br>
+
+        <label for="gender">GENDER:</label>
+        <input type="text" name="gender" value="{{ student.gender }}" required><br>
+
+        <label for="dob">DOB:</label>
+        <input type="text" name="dob" value="{{ student.dob }}" required><br>
+
+        <label for="year_of_admn">YEAR OF ADMISSION:</label>
+        <input type="text" name="year_of_admn" value="{{ student.year_of_admn }}" required><br>
+
+        <label for="address">ADDRESS:</label>
+        <input type="text" name="address" value="{{ student.address }}" required><br>
+
+        <label for="phoneno">PHONE NO:</label>
+        <input type="text" name="phoneno" value="{{ student.phoneno }}" required><br>
+
+        <label for="email">EMAIL:</label>
+        <input type="text" name="email" value="{{ student.email }}" required><br>
+
+        
+
         <input type="submit" value="Add">
     </form>
 </body>
